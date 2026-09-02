@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "gauntlet",
   "displayName": "Gauntlet",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Run your code through the gauntlet: Uncle Bob style agent pipeline for Node/Nest/Next: specifier -> coder -> cleaner -> architect -> hardener, gated by deterministic tools (complexity, CRAP, duplication, dependency rules, mutation testing).",
   "author": {
     "name": "YOUR_GH_USER"
