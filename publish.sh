@@ -21,4 +21,4 @@ fi
 echo
 echo "Published. In Claude Code:"
 echo "  /plugin marketplace add $USER/$REPO"
-echo "  /plugin install clean-forge@kapelsinas-plugins"
+echo "  /plugin install gauntlet@kapelsinas-plugins"

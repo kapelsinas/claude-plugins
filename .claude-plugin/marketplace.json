@@ -3,14 +3,14 @@
   "name": "kapelsinas-plugins",
   "owner": { "name": "YOUR_GH_USER" },
   "metadata": {
-    "description": "Personal Claude Code plugins: Clean Forge (Uncle Bob style spec -> code -> clean -> architect -> harden pipeline for Node/Nest/Next).",
+    "description": "Personal Claude Code plugins: Gauntlet (Uncle Bob style spec -> code -> clean -> architect -> harden pipeline for Node/Nest/Next).",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "clean-forge",
-      "description": "Uncle Bob style agent pipeline for Node/Nest/Next: specifier -> coder -> cleaner -> architect -> hardener, gated by complexity, CRAP, duplication, dependency rules and mutation testing.",
-      "source": "./plugins/clean-forge",
+      "name": "gauntlet",
+      "description": "Run your code through the gauntlet: Uncle Bob style agent pipeline for Node/Nest/Next: specifier -> coder -> cleaner -> architect -> hardener, gated by complexity, CRAP, duplication, dependency rules and mutation testing.",
+      "source": "./plugins/gauntlet",
       "category": "development",
       "tags": ["tdd", "atdd", "gherkin", "mutation-testing", "nestjs", "nextjs", "ddd", "quality-gates"]
     }
