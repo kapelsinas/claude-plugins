@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-  "name": "claude-plugins",
+  "name": "kapelsinas-plugins",
   "owner": { "name": "YOUR_GH_USER" },
   "metadata": {
     "description": "Personal Claude Code plugins: Clean Forge (Uncle Bob style spec -> code -> clean -> architect -> harden pipeline for Node/Nest/Next).",

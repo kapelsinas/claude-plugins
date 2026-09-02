@@ -6,11 +6,11 @@ Personal Claude Code plugin marketplace.
 
 ```
 /plugin marketplace add YOUR_GH_USER/claude-plugins
-/plugin install clean-forge@claude-plugins
+/plugin install clean-forge@kapelsinas-plugins
 ```
-Or from a terminal: `claude plugin marketplace add YOUR_GH_USER/claude-plugins && claude plugin install clean-forge@claude-plugins`.
+Or from a terminal: `claude plugin marketplace add YOUR_GH_USER/claude-plugins && claude plugin install clean-forge@kapelsinas-plugins`.
 
-Update later with `/plugin update clean-forge@claude-plugins` (versions are pinned by `plugins/<name>/.claude-plugin/plugin.json` → bump `version` to ship an update).
+Update later with `/plugin update clean-forge@kapelsinas-plugins` (versions are pinned by `plugins/<name>/.claude-plugin/plugin.json` → bump `version` to ship an update).
 
 ## Plugins
 
@@ -23,9 +23,9 @@ Add to a project's `.claude/settings.json` so collaborators get it on trust:
 ```json
 {
   "extraKnownMarketplaces": {
-    "claude-plugins": { "source": { "source": "github", "repo": "YOUR_GH_USER/claude-plugins" } }
+    "kapelsinas-plugins": { "source": { "source": "github", "repo": "YOUR_GH_USER/claude-plugins" } }
   },
-  "enabledPlugins": { "clean-forge@claude-plugins": true }
+  "enabledPlugins": { "clean-forge@kapelsinas-plugins": true }
 }
 ```
 

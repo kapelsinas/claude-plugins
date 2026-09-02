@@ -26,7 +26,7 @@ Five narrow agents, each with a small fresh context, each ending with a fixed-fo
 **From the marketplace (recommended)**
 ```
 /plugin marketplace add YOUR_GH_USER/claude-plugins
-/plugin install clean-forge@claude-plugins
+/plugin install clean-forge@kapelsinas-plugins
 ```
 
 **Personal, auto-loaded, no marketplace**
