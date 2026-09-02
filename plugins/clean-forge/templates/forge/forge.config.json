@@ -1,0 +1,26 @@
+{
+  "packageManager": "pnpm",
+  "testRunner": "jest",
+  "srcRoot": "src",
+  "moduleRoot": "src/modules",
+  "legacy": false,
+  "thresholds": {
+    "complexity": 6,
+    "crap": 6,
+    "duplication": 1,
+    "mutation": 80
+  },
+  "gate": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint src --max-warnings 0",
+    "dup": "jscpd src",
+    "deps": "depcruise src --config .dependency-cruiser.cjs",
+    "test": "jest --coverage --silent",
+    "acceptance": "cucumber-js",
+    "crap": "crap-typescript --agent --threshold 6"
+  },
+  "harden": {
+    "mutate": "stryker run",
+    "report": ".forge/reports/mutation.json"
+  }
+}
