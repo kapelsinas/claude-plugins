@@ -116,3 +116,7 @@ Everything is in `.forge/forge.config.json`. Thresholds: complexity 6, CRAP 6, d
 
 ## Credits
 Method: Robert C. Martin's SwarmForge pipeline (specifier → coder → cleaner → architect → hardener) and his CRAP/mutation posts. Node adaptation and gate tooling here are original. Not affiliated with Uncle Bob or with the unrelated `robert-hoffmann/uncle-bob` skill.
+
+## Plays nice with caveman / ponytail
+- **caveman**: keep it. Its hook styles your main-session turns; gauntlet subagents never see it and don't need it — their handoff formats are stricter than caveman anyway.
+- **ponytail**: its philosophy is baked into the coder/cleaner/architect prompts (stdlib first, YAGNI within layers, smallest green diff, `// ponytail:` shortcut tracking surfaced in handoffs and `/gauntlet:audit`). You can keep the ponytail plugin for non-gauntlet work; during `/gauntlet:build` the agents don't need it, and its UserPromptSubmit injection doesn't reach subagents. If you run ponytail-review on a gauntlet branch, expect it to agree with the cleaner.

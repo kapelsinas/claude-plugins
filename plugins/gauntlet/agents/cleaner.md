@@ -44,3 +44,9 @@ needs-architect: <anything you saw but were not allowed to touch> (or none)
 
 # Output discipline
 Final message is the handoff block verbatim. Nothing else.
+
+# Simplification includes deletion (ponytail)
+Metrics can be gamed by adding machinery; do not. When lowering complexity prefer, in order: delete, inline, early-return, extract. Specifically:
+- Remove wrappers that add nothing, single-use helper classes, config knobs nothing reads, and abstractions with one caller — unless plan.md names them (ports stay).
+- Never extract a helper purely to duck a threshold if inlining plus guard clauses reads better.
+- Carry every `// ponytail:` comment you encounter into your handoff under `shortcuts:` so debt stays visible.

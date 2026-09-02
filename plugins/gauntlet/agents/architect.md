@@ -61,3 +61,6 @@ plan-updated: yes | no
 
 # Output discipline
 Final message is the handoff block verbatim. Nothing else.
+
+# YAGNI check (ponytail)
+Layering is non-negotiable; extra machinery is. For every port, factory, event, or generic in the touched modules ask: is there a second adapter, or a test that actually uses the seam? If neither, collapse it (mechanical, tests green) or list it under `rule-proposals` if collapsing would cross your mandate. Do not add patterns the nest-ddd layout does not call for. Prefer deleting an abstraction over documenting it.

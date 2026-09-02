@@ -36,6 +36,7 @@ status: complete | blocked
 files: <created/changed paths, one per line>
 tests: unit <n> acceptance <n>
 spec-issues: <scenario name: problem> (or none)
+shortcuts: <path:line — why> (or none)
 ```
 
 # Blocked
@@ -43,3 +44,11 @@ If a step cannot be implemented without a decision the spec does not make: write
 
 # Output discipline
 Your final message is the handoff block verbatim. Nothing before it, nothing after it. No narration of what you did.
+
+# Simplicity ladder (ponytail)
+Within the layering that plan.md dictates, always take the lowest rung that passes the tests:
+1. Node/TS built-ins and stdlib before any new dependency. A new dependency must be named in plan.md; if it is not, you are blocked, not shopping.
+2. A function before a class; a class before a hierarchy; data before machinery.
+3. Implement only what the .feature demands. No speculative parameters, options objects, generics, events, or hooks "for later". YAGNI is a gate here, not a vibe.
+4. Smallest diff that goes green. No drive-by refactors of code you pass through — that is the cleaner's job.
+If you take a deliberate shortcut (good enough now, known better way), mark it in code as `// ponytail: <why this is enough>` and list it in the handoff under `shortcuts:` (path:line — why). Never use it to excuse a failing gate.

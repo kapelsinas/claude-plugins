@@ -42,6 +42,9 @@ gate baseline: <one line from forge:gate summary if available>
 ## Coverage gaps that matter
 - files in top-churn decile with <50% line coverage (bugs land where code changes)
 
+## Deliberate shortcuts (tracked debt)
+`grep -rn "ponytail:" src` — list path:line and the stated reason; flag any older than 6 months (git blame) or sitting inside a hotspot file.
+
 ## Suggested order
 1. <file> — <one line: smallest safe move, e.g. "extract X, add tests for branches A/B">
 ...only 5 items. Not a backlog, a starting sequence.
